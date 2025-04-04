@@ -20,6 +20,7 @@ const app = express();
 const port = 3435;
 
 app.get("/", (req,res)=>{
+    console.log(__dirname + "/index.html");
     res.sendFile(__dirname + "/index.html");
 });
 
